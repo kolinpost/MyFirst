@@ -1,0 +1,9 @@
+.item {
+    margin-left: 30px;
+    color: rgb(63, 178, 34);
+    text-align: left;
+}
+
+.item img {
+    width: 30px;
+}

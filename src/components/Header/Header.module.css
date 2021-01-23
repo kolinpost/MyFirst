@@ -1,0 +1,10 @@
+.board {
+    grid-area: h;
+    background-color: rgba(0, 204, 255, 0.356);
+}
+
+.loginBlock {
+    padding-top: 20px;
+    padding-left: 800px;
+
+}

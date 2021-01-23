@@ -1,0 +1,32 @@
+.item {
+    padding-top: 100px;
+    font-size: smaller;
+}
+
+.item img {
+    width: 100px;
+}
+
+.biggerFont{
+    font-style: initial;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.photos{
+    padding-left: 200px;
+    padding-bottom: 30px;
+}
+.aboutMe{
+    font-size: 20px;
+    padding-left: 200px;
+    margin-top: 5px;
+}
+
+.vasilev{
+    margin-top: 30px;
+    font-size: 12px;
+    text-align: center;
+    color: khaki;
+}

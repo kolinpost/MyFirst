@@ -1,0 +1,46 @@
+import React from 'react';
+import style from './Comment.module.css';
+import Post2 from './Post2/Post2';
+
+
+
+
+
+const Post = (props) => {
+
+    let PostElement = props.PostDate
+        .map(P => <Post2 message={P.message} likesCount={P.likesCount} />);
+
+    let newPostElement = React.createRef();
+
+    let onAddPost = () => {
+        props.addPost()
+    }
+
+    let PostChange = () => {
+        let text = newPostElement.current.value;
+        props.UpdateNewPostText(text)
+    }
+
+
+    return (
+        <div><h3>My Posts</h3>
+            <div className={style.item}>
+                <div>
+                    <textarea onChange={PostChange} ref={newPostElement} value={props.newPostText}></textarea>
+                </div>
+                <div>
+                    <button onClick={onAddPost}>Add</button>
+                    <button>Remove</button>
+                </div>
+
+                <div className='style.item'>
+                    <br></br>
+                    {PostElement}
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    )
+}
+export default Post;
